@@ -18,7 +18,7 @@ class FollowersCountIntentHandler: INExtension, FollowersCountIntentHandling {
     func provideAccountOptionsCollection(for intent: FollowersCountIntent, searchTerm: String?) async throws -> INObjectCollection<NSString> {
         guard
             let searchTerm = searchTerm,
-            let authenticationBox = WidgetExtension.appContext
+            let authenticationBox = IntentHandler.appContext
                 .authenticationService
                 .mastodonAuthenticationBoxes
                 .first
@@ -26,7 +26,7 @@ class FollowersCountIntentHandler: INExtension, FollowersCountIntentHandling {
             return INObjectCollection(items: [])
         }
 
-        let results = try await WidgetExtension.appContext
+        let results = try await IntentHandler.appContext
             .apiService
             .search(query: .init(q: searchTerm), authenticationBox: authenticationBox)
         

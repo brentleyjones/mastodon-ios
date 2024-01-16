@@ -61,7 +61,6 @@
 		2AB5011D299243FB00346092 /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2AB50120299243FB00346092 /* WidgetExtension.intentdefinition */; };
 		2AB5011E299243FB00346092 /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2AB50120299243FB00346092 /* WidgetExtension.intentdefinition */; };
 		2AE202AC297FE19100F66E55 /* FollowersCountIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE202AB297FE19100F66E55 /* FollowersCountIntentHandler.swift */; };
-		2AE202AD297FE1CD00F66E55 /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A72813E297EC762004138C5 /* WidgetExtension.swift */; };
 		2AE244482927831100BDBF7C /* UIImage+SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE244472927831100BDBF7C /* UIImage+SFSymbols.swift */; };
 		2D198643261BF09500F0B013 /* SearchResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D198642261BF09500F0B013 /* SearchResultItem.swift */; };
 		2D198649261C0B8500F0B013 /* SearchResultSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D198648261C0B8500F0B013 /* SearchResultSection.swift */; };
@@ -3889,7 +3888,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB0009A726AEE5DC009B9D2D /* Intents.intentdefinition in Sources */,
-				2AE202AD297FE1CD00F66E55 /* WidgetExtension.swift in Sources */,
 				DBB8AB4626AECDE200F6D281 /* SendPostIntentHandler.swift in Sources */,
 				2AB5011D299243FB00346092 /* WidgetExtension.intentdefinition in Sources */,
 				2AE202AC297FE19100F66E55 /* FollowersCountIntentHandler.swift in Sources */,
