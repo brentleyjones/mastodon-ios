@@ -425,8 +425,6 @@
 		DBA94436265CBB7400C537E1 /* ProfileFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA94435265CBB7400C537E1 /* ProfileFieldItem.swift */; };
 		DBA9443E265CFA6400C537E1 /* ProfileFieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9443D265CFA6400C537E1 /* ProfileFieldCollectionViewCell.swift */; };
 		DBABE3EC25ECAC4B00879EE5 /* WelcomeIllustrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBABE3EB25ECAC4B00879EE5 /* WelcomeIllustrationView.swift */; };
-		DBB3BA2A26A81C020004F2D4 /* FLAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3BA2926A81C020004F2D4 /* FLAnimatedImageView.swift */; };
-		DBB3BA2B26A81D060004F2D4 /* FLAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3BA2926A81C020004F2D4 /* FLAnimatedImageView.swift */; };
 		DBB45B5627B39FC9002DC5A7 /* MediaPreviewVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB45B5527B39FC9002DC5A7 /* MediaPreviewVideoViewController.swift */; };
 		DBB45B5927B39FE4002DC5A7 /* MediaPreviewVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB45B5827B39FE4002DC5A7 /* MediaPreviewVideoViewModel.swift */; };
 		DBB45B5B27B3A109002DC5A7 /* MediaPreviewTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB45B5A27B3A109002DC5A7 /* MediaPreviewTransitionViewController.swift */; };
@@ -1136,7 +1134,6 @@
 		DBA94435265CBB7400C537E1 /* ProfileFieldItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFieldItem.swift; sourceTree = "<group>"; };
 		DBA9443D265CFA6400C537E1 /* ProfileFieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFieldCollectionViewCell.swift; sourceTree = "<group>"; };
 		DBABE3EB25ECAC4B00879EE5 /* WelcomeIllustrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeIllustrationView.swift; sourceTree = "<group>"; };
-		DBB3BA2926A81C020004F2D4 /* FLAnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLAnimatedImageView.swift; sourceTree = "<group>"; };
 		DBB45B5527B39FC9002DC5A7 /* MediaPreviewVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPreviewVideoViewController.swift; sourceTree = "<group>"; };
 		DBB45B5827B39FE4002DC5A7 /* MediaPreviewVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPreviewVideoViewModel.swift; sourceTree = "<group>"; };
 		DBB45B5A27B3A109002DC5A7 /* MediaPreviewTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPreviewTransitionViewController.swift; sourceTree = "<group>"; };
@@ -2560,7 +2557,6 @@
 				2A82294E29262EE000D2A1F7 /* AppContext+NextAccount.swift */,
 				5DF1056325F887CB00D6C0D4 /* AVPlayer.swift */,
 				2D206B8525F5FB0900143C56 /* Double.swift */,
-				DBB3BA2926A81C020004F2D4 /* FLAnimatedImageView.swift */,
 				DB68586325E619B700F0A850 /* NSKeyValueObservation.swift */,
 				2D939AB425EDD8A90076FA61 /* String.swift */,
 				DB68A06225E905E000CFDF14 /* UIApplication.swift */,
@@ -3532,7 +3528,6 @@
 				DBDFF1952805561700557A48 /* DiscoveryPostsViewModel+Diffable.swift in Sources */,
 				DB03A795272A981400EE37C5 /* ContentSplitViewController.swift in Sources */,
 				DBDFF19C28055BD600557A48 /* DiscoveryViewModel.swift in Sources */,
-				DBB3BA2A26A81C020004F2D4 /* FLAnimatedImageView.swift in Sources */,
 				DB3E6FF32806D97400B035AE /* DiscoveryNewsViewModel+State.swift in Sources */,
 				D8FAAE3F2AD0430E00DC1832 /* ContactAdminTableViewCell.swift in Sources */,
 				DB6746ED278F45F0008A6B94 /* AutoGenerateProtocolRelayDelegate.swift in Sources */,
@@ -3910,7 +3905,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC6462326A1712000B0E31B /* ShareViewModel.swift in Sources */,
-				DBB3BA2B26A81D060004F2D4 /* FLAnimatedImageView.swift in Sources */,
 				DBC3872429214121001EC0FD /* ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
