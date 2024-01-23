@@ -97,6 +97,11 @@ fastlane/devices.txt
 
 iOSInjectionProject/
 
+### Bazel ###
+
+/bazel-*
+/MODULE.bazel.lock
+
 ### SwiftPM ###
 Packages
 xcuserdata
