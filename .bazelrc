@@ -1,2 +1,19 @@
+# Cache
+
+common --disk_cache=~/bazel_disk_cache
+common --remote_cache=grpcs://remote.buildbuddy.io
+common --noremote_upload_local_results
+common:upload --disk_cache=
+common:upload --remote_upload_local_results
+
+# Cache warming
+
+common:warming --config=upload
+common:warming --remote_download_minimal
+
+# CI
+
+common:ci --config=upload
+
 # Work around rules_swift_package_manager sandboxing issue
 --strategy_regexp="Compiling Sources/UITextView+Placeholder\.m=sandboxed"
