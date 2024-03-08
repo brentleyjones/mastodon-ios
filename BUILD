@@ -1,5 +1,26 @@
 load("@gazelle//:def.bzl", "gazelle", "gazelle_binary")
 load("@rules_swift_package_manager//swiftpkg:defs.bzl", "swift_update_packages")
+load("@rules_xcodeproj//xcodeproj:defs.bzl", "top_level_target", "xcodeproj")
+
+xcodeproj(
+    name = "xcodeproj",
+    generation_mode = "incremental",
+    project_name = "MastodonBazel",
+    top_level_targets = [
+        top_level_target(
+            "//Mastodon:Mastodon",
+            target_environments = ["simulator"],
+        ),
+        top_level_target(
+            "//MastodonTests:MastodonTests",
+            target_environments = ["simulator"],
+        ),
+        top_level_target(
+            "//MastodonUITests:MastodonUITests",
+            target_environments = ["simulator"],
+        ),
+    ],
+)
 
 # - Gazelle
 

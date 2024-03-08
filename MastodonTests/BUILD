@@ -6,6 +6,7 @@ ios_unit_test(
     bundle_id = "org.joinmastodon.MastodonTests",
     minimum_os_version = "16.0",
     test_host = "//Mastodon:Mastodon",
+    visibility = ["@rules_xcodeproj//xcodeproj:generated"],
     deps = [":MastodonTests.library"],
 )
 
