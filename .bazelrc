@@ -15,5 +15,11 @@ common:warming --remote_download_minimal
 
 common:ci --config=upload
 
+# BES
+
+common --bes_backend=grpcs://remote.buildbuddy.io
+common --bes_results_url=https://app.buildbuddy.io/invocation/
+common --bes_upload_mode=nowait_for_upload_complete
+
 # Work around rules_swift_package_manager sandboxing issue
 --strategy_regexp="Compiling Sources/UITextView+Placeholder\.m=sandboxed"
