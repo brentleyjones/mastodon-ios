@@ -21,5 +21,15 @@ common --bes_backend=grpcs://remote.buildbuddy.io
 common --bes_results_url=https://app.buildbuddy.io/invocation/
 common --bes_upload_mode=nowait_for_upload_complete
 
+# Remote execution
+
+common --remote_default_exec_properties=OSFamily=darwin
+common --remote_default_exec_properties=Arch=arm64
+
+common:remote --config=upload
+common:remote --remote_executor=grpcs://remote.buildbuddy.io
+common:remote --remote_default_exec_properties=OSFamily=darwin
+common:remote --remote_default_exec_properties=Arch=arm64
+
 # Work around rules_swift_package_manager sandboxing issue
 --strategy_regexp="Compiling Sources/UITextView+Placeholder\.m=sandboxed"
