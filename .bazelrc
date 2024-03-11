@@ -1,8 +1,20 @@
+startup --digest_function=blake3
+common --cache_computed_file_digests=500000
+
+common --noworker_sandboxing
+common --spawn_strategy=remote,worker,local
+
 # Cache
 
 common --disk_cache=~/bazel_disk_cache
+common --experimental_remote_cache_async
+common --jobs=HOST_CPUS*2
 common --remote_cache=grpcs://remote.buildbuddy.io
+common --remote_cache_compression
 common --noremote_upload_local_results
+
+common --modify_execution_info=^(AppleLipo|BitcodeSymbolsCopy|BundleApp|BundleTreeApp|DsymDwarf|DsymLipo|GenerateAppleSymbolsFile|ObjcBinarySymbolStrip|CppArchive|CppLink|ObjcLink|ProcessAndSign|SignBinary|SwiftArchive|SwiftStdlibCopy)$=+no-remote,^(BundleResources|ImportedDynamicFrameworkProcessor)$=+no-remote-exec
+
 common:upload --disk_cache=
 common:upload --remote_upload_local_results
 
@@ -20,11 +32,15 @@ common:ci --config=upload
 common --bes_backend=grpcs://remote.buildbuddy.io
 common --bes_results_url=https://app.buildbuddy.io/invocation/
 common --bes_upload_mode=nowait_for_upload_complete
+common --nolegacy_important_outputs
 
 # Remote execution
 
 common --remote_default_exec_properties=OSFamily=darwin
 common --remote_default_exec_properties=Arch=arm64
+common --remote_default_exec_properties=preserve-workspace=true
+common --remote_default_exec_properties=recycle-runner=true
+common --remote_default_exec_properties='clean-workspace-inputs=*'
 
 common:remote --config=upload
 common:remote --remote_executor=grpcs://remote.buildbuddy.io
