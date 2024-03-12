@@ -1,0 +1,2 @@
+# Work around rules_swift_package_manager sandboxing issue
+--strategy_regexp="Compiling Sources/UITextView+Placeholder\.m=sandboxed"

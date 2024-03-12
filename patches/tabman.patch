@@ -1,0 +1,27 @@
+From 481d6779e21337e81f8d7211038caae7dc59d0b9 Mon Sep 17 00:00:00 2001
+From: Brentley Jones <github@brentleyjones.com>
+Date: Fri, 16 Feb 2024 15:24:08 -0600
+Subject: [PATCH] Fix accidental include of app icons in SWift package
+
+---
+ Package.swift | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/Package.swift b/Package.swift
+index 6b9c92d4..8bcd8f84 100644
+--- a/Package.swift
++++ b/Package.swift
+@@ -21,9 +21,7 @@ let package = Package(
+         .target(
+             name: "Tabman",
+             dependencies: ["Pageboy"],
+-            path: ".",
+-            exclude: ["Sources/Tabman/Tabman.h", "Sources/Tabman/Info.plist"],
+-            sources: ["Sources/Tabman"],
++            exclude: ["Tabman.h", "Info.plist"],
+             linkerSettings: [
+                 .linkedFramework("UIKit")
+             ]
+-- 
+2.39.2
+
